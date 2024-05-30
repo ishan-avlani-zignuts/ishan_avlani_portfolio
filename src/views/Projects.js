@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
+import { Box, Button } from "@mui/material";
 import ProjectCard from "../components/ProjectCard";
 import { projects } from "../assets/data/constants";
-
+import { MdExpandMore } from "react-icons/md";
+import { MdExpandLess } from "react-icons/md";
 const Projects = () => {
   const [showAllProjects, setShowAllProjects] = useState(false);
   const projectsToShow = showAllProjects ? projects : projects.slice(0, 4);
@@ -18,7 +19,7 @@ const Projects = () => {
 
   return (
     <Box
-      id="Projects"
+      id="projects"
       sx={{
         paddingTop: "100px",
         display: "flex",
@@ -26,7 +27,7 @@ const Projects = () => {
         justifyContent: "center",
         position: "relative",
         zIndex: 1,
-        padding: "0 16px",
+        // padding: "0 16px",
         alignItems: "center",
         backgroundColor: "black",
       }}
@@ -65,8 +66,8 @@ const Projects = () => {
             marginBottom: "40px",
           }}
         >
-          I have worked on a wide range of projects. From web apps to android
-          apps. Here are some of my projects.
+          I have undertaken a wide variety of projects.
+          Here are a few notable examples of my work.
         </Typography>
         <div
           style={{
@@ -78,34 +79,39 @@ const Projects = () => {
           }}
         >
           {projectsToShow.map((project) => (
-            <ProjectCard
-              key={project.id}
-              project={project}
-            />
+            <ProjectCard key={project.id} project={project} />
           ))}
         </div>
         {projects.length > 4 && !showAllProjects && (
-          <button
-            onClick={handleViewMore}
-            style={{
-              backgroundColor: "wheat",
-              color: "black",
-              padding: "10px 20px",
-              border: "none",
-              borderRadius: "5px",
-              cursor: "pointer",
-              marginTop: "20px",
-            }}
-          >
-            View More
-          </button>
+          <div style={{ textAlign: "center", marginTop: "auto" }}>
+            <Button
+              onClick={handleViewMore}
+              variant="contained"
+              color="primary"
+              target="_blank"
+              rel="noopener noreferrer"
+              endIcon={<MdExpandMore />}
+              style={{
+                padding: "10px 20px",
+                border: "none",
+                borderRadius: "5px",
+                cursor: "pointer",
+                marginTop: "20px",
+              }}
+            >
+              View More
+            </Button>
+          </div>
         )}
         {showAllProjects && (
-          <button
+          <Button
             onClick={handleViewLess}
+            variant="contained"
+            color="primary"
+            target="_blank"
+            rel="noopener noreferrer"
+            endIcon={<MdExpandLess />}
             style={{
-              backgroundColor: "wheat",
-              color: "black",
               padding: "10px 20px",
               border: "none",
               borderRadius: "5px",
@@ -114,7 +120,7 @@ const Projects = () => {
             }}
           >
             View Less
-          </button>
+          </Button>
         )}
       </div>
     </Box>

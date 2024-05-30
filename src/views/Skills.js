@@ -5,10 +5,11 @@ import { Box, Typography } from "@mui/material";
 
 const Skills = () => (
   <Box
+  id="skills"
     display={"flex"}
     flexDirection={"column"}
     sx={{ backgroundColor: "black" }}
-    paddingTop={"25px"}
+    paddingTop={"100px"}
   >
     <Box>
       <Typography
@@ -22,6 +23,20 @@ const Skills = () => (
         }}
       >
         My Tech Skills
+      </Typography>
+      <Typography
+        variant="h6"
+        sx={{
+          fontSize: { xs: "16px", md: "18px" },
+          textAlign: "center",
+          fontWeight: 600,
+          color: "wheat",
+          marginBottom: "40px",
+          marginTop: "20px",
+        }}
+      >
+        I have a robust skill set in various technologies, honed through
+        hands-on experience and continuous learning.
       </Typography>
     </Box>
     <Marquee gradient={false} speed={50} loop={0}>
@@ -49,10 +64,15 @@ const Skills = () => (
               src={skill.img}
               sx={{
                 objectFit: "cover",
-                // border:"1px solid red" 
+                // border:"1px solid red"
               }}
             />
-            <Typography variant="body1" mt={1} color={"white"} style={{fontSize:"20px"}}>
+            <Typography
+              variant="body1"
+              mt={1}
+              color={"white"}
+              style={{ fontSize: "20px" }}
+            >
               {skill.desc}
             </Typography>
           </Box>

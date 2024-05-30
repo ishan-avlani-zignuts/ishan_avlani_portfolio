@@ -1,154 +1,325 @@
-// import React from 'react'
-// import Navbar from '../components/Navbar'
-// import {
-//   Box,
-//   Typography,
-//   Link,
-//   Drawer,
-//   List,
-//   ListItem,
-//   ListItemText,
-//   IconButton,
-// } from "@mui/material";
+// import React from "react";
+// import { Typography, Button } from "@mui/material";
+// import Typewriter from "typewriter-effect";
+// import { Box } from "@mui/system";
+// import { Bio } from "../assets/data/constants";
+// import HeroImg from "../assets/images/hero.jpeg";
+// import Navbar from "../components/Navbar";
+// import resume from "../assets/Ishan Sandip Avlani Resume.pdf";
+
+import { ReplayCircleFilledTwoTone } from "@mui/icons-material";
+
+// import { FaFileDownload } from "react-icons/fa";
+// const Hero = () => {
+//   return (
+//     <>
+//       <div>
+//         <Navbar />
+//       </div>
+
+//       <Box id="About" >
+//         <Box
+//           sx={{
+//             display: "flex",
+//             justifyContent: "center",
+//             position: "relative",
+//             paddingTop: "100px",
+//             zIndex: 0,
+//             backgroundColor: "black",
+//             color: "white",
+//           }}
+//         >
+//           <div
+//             style={{
+//               display: "flex",
+//               justifyContent: "space-between",
+//               alignItems: "center",
+//               width: "100%",
+//               maxWidth: 1200,
+//             }}
+//           >
+//             <Box
+//               sx={{
+//                 width: "100%",
+//                 order: { xs: 2, md: 1 },
+//                 display: "flex",
+//                 gap: 2,
+//                 flexDirection: "column",
+//                 alignItems: "center",
+//                 marginBottom: { xs: "30px", md: "80px" },
+//                 textAlign: { xs: "center", md: "left" },
+//               }}
+//             >
+//               <Typography variant="h4" sx={{ fontWeight: 700 }}>
+//                 Hi, 👋 I am <span style={{color:"wheat"}}>{Bio.name}</span>
+//               </Typography>
+//               <Box
+//                 sx={{
+//                   fontWeight: 600,
+//                   fontSize: 32,
+//                   display: "flex",
+//                 }}
+//               >
+//                 I am a &nbsp;
+//                 <Typewriter
+
+//                   options={{
+//                     strings: Bio.roles,
+//                     autoStart: true,
+//                     loop: true,
+//                   }}
+//                 />
+//               </Box>
+//               <Typography variant="body1" sx={{ fontSize: 20 }}>
+//                 {Bio.description}
+//               </Typography>
+
+//     <div style={{ textAlign: "center" }}>
+// <Button
+//   variant="contained"
+//   color="primary"
+//   href={resume}
+//   download="Ishan Sandip Avlani Resume.pdf"
+//   target="_blank"
+//   rel="noopener noreferrer"
+//   endIcon={<FaFileDownload />}
+// >
+//   Download Resume
+// </Button>
+//     </div>
+//   </Box>
+
+// <Box
+//   sx={{
+//     width: "100%",
+//     order: { xs: 1, md: 2 },
+//     display: "flex",
+//     justifyContent: "flex-end",
+//   }}
+// >
+//   <img
+//     src={HeroImg}
+//     alt="Ishan Avlani"
+//     style={{
+//       maxWidth: 350,
+//       maxHeight: 350,
+//       border: "5px solid white",
+//     }}
+//   />
+// </Box>
+// </div>
+//         </Box>
+//       </Box>
+//     </>
+//   );
+// };
+
+// export default Hero;
+
+// import React from "react";
+// import { Box, Grid, Typography, Button } from "@mui/material";
+// import Navbar from "../components/Navbar";
+// import { Bio } from "../assets/data/constants";
+// import Typewriter from "typewriter-effect";
+// import HeroImg from "../assets/images/hero.jpeg";
+// import resume from "../assets/Ishan Sandip Avlani Resume.pdf";
+// import { FaFileDownload } from "react-icons/fa";
+
 // const Home = () => {
 //   return (
-//     <div>
-//       <Navbar/>
-//       <Typography>
-//         Hello I'm Ishan Avlani <br/> A Software Developer
-//       </Typography>
-//     </div>
-//   )
-// }
+//     <Box>
+//       <Box>
+//         <Navbar />
+//       </Box>
+//       <Box id="About">
+//         <Box
+//           height={"800px"}
+//           sx={{
+//             backgroundColor: "black",
+//             display: "flex",
+//             flexDirection: "row",
+//           }}
+//         >
+//           <Grid container>
+//             <Grid item style={{ paddingTop: "220px" , paddingLeft:"250px"}} md={6}>
+//               <Typography variant="h4" sx={{ fontWeight: 700, color: "white" }}>
+//                 Hi, 👋 I am <span style={{ color: "wheat" }}>{Bio.name}</span>
+//               </Typography>
+//               <Box
+//                 sx={{
+//                   fontWeight: 600,
+//                   fontSize: 32,
+//                   display: "flex",
+//                   color: "white",
+//                   marginTop: "25px",
+//                   marginBottom: "25px",
+//                 }}
+//               >
+//                 I am a &nbsp;
+//                 <Typewriter
+//                   options={{
+//                     strings: Bio.roles,
+//                     autoStart: true,
+//                     loop: true,
+//                   }}
+//                   style={{ color: "blue" }}
+//                 />
+//               </Box>
+//               <Typography variant="body1" sx={{ fontSize: 20, color: "white" }}>
+//                 {Bio.description}
+//               </Typography>
+//               <Box marginTop={"20px"}>
+//                 <Button
+//                   variant="contained"
+//                   color="primary"
+//                   href={resume}
+//                   download="Ishan Sandip Avlani Resume.pdf"
+//                   target="_blank"
+//                   rel="noopener noreferrer"
+//                   endIcon={<FaFileDownload />}
+//                 >
+//                   Download Resume
+//                 </Button>
+//               </Box>
+//             </Grid>
 
-// export default Home
+//             <Grid item md={6}>
+//               <Box
+//                 sx={{
+//                   width: "100%",
+//                   // order: { xs: 1, md: 2 },
+//                   display: "flex",
+//                   // justifyContent: "flex-end",
+//                   alignItems: "center",
+//                   justifyContent: "center",
+//                   paddingTop: "200px",
+//                 }}
+//               >
+//                 <img
+//                   src={HeroImg}
+//                   alt="Ishan Avlani"
+//                   style={{
+//                     maxWidth: 350,
+//                     maxHeight: 350,
+//                     border: "5px solid white",
+//                   }}
+//                 />
+//               </Box>
+//             </Grid>
+//           </Grid>
+//         </Box>
+//       </Box>
+//     </Box>
+//   );
+// };
+
+// export default Home;
+
+
+
+
 import React from "react";
-import { motion } from "framer-motion";
-import { Typography, Button } from "@mui/material";
-import Typewriter from "typewriter-effect";
-import { Box } from "@mui/system";
+import { Box, Grid, Typography, Button } from "@mui/material";
+import Navbar from "../components/Navbar";
 import { Bio } from "../assets/data/constants";
-import HeroImg from "../assets/images/ishan.jpeg";
-import { Tilt } from "react-tilt";
-// import Navbar from "../components/Navbar";
-// import EducationCard from "./Education";
+import Typewriter from "typewriter-effect";
+import HeroImg from "../assets/images/hero.jpeg";
 import resume from "../assets/Ishan Sandip Avlani Resume.pdf";
-const Hero = () => {
-  return (
-    <>  
-      {/* <div>
-        <Navbar />
-      </div> */}
+import { FaFileDownload } from "react-icons/fa";
 
-      <div id="About">
+const Home = () => {
+  return (
+    <Box id="home">
+      <Box>
+        <Navbar />
+      </Box>
+      <Box id="About">
         <Box
+          height={{ xs: "auto", md: "800px" }}
           sx={{
-            display: "flex",
-            justifyContent: "center",
-            position: "relative",
-            padding: "80px 30px",
-            zIndex: 0,
             backgroundColor: "black",
-            color: "white",
+            display: "flex",
+            flexDirection: "row",
+            padding: { xs: "20px", md: 0 },
           }}
         >
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2 }}
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-              width: "100%",
-              maxWidth: 1100,
-            }}
-          >
-            <Box
+          <Grid container>
+            <Grid
+              item
+              xs={12}
+              md={6}
               sx={{
-                width: "100%",
-                order: { xs: 2, md: 1 },
-                display: "flex",
-                gap: 6,
-                flexDirection: "column",
-                alignItems: "center",
-                marginBottom: { xs: "30px", md: "80px" },
-                textAlign: { xs: "center", md: "left" },
+                paddingTop: { xs: "120px", md: "220px" },
+                paddingLeft: { xs: "20px", md: "270px" },
               }}
             >
-              <Typography
-                variant="h2"
-                sx={{ fontWeight: 700, lineHeight: "68px" }}
-              >
-                Hi, I am <br /> {Bio.name}
+              <Typography variant="h4" sx={{ fontWeight: 700, color: "white" }}>
+                Hi, 👋 I am <span style={{ color: "wheat" }}>{Bio.name}</span>
               </Typography>
               <Box
                 sx={{
                   fontWeight: 600,
-                  fontSize: 32,
+                  fontSize: { xs: 24, md: 32 },
                   display: "flex",
-                  gap: 1,
-                  lineHeight: "68px",
+                  color: "white",
+                  marginTop: "25px",
+                  marginBottom: "25px",
                 }}
               >
-                I am a
+                I am a &nbsp;
                 <Typewriter
                   options={{
                     strings: Bio.roles,
                     autoStart: true,
                     loop: true,
                   }}
+                  style={{ color: "blue" }}
                 />
               </Box>
-              <Typography
-                variant="body1"
-                sx={{ fontSize: 20, lineHeight: "32px", marginBottom: "42px" }}
-              >
+              <Typography variant="body1" sx={{ fontSize: 20, color: "white" }}>
                 {Bio.description}
               </Typography>
-              <a
-                href={resume}
-                // target="_blank"
-                download="Ishan Sandip Avlani Resume.pdf"
-              >
+              <Box marginTop={"20px"}>
                 <Button
                   variant="contained"
-                  sx={{ width: "95%", maxWidth: 300 }}
+                  color="primary"
+                  href={resume}
+                  download="Ishan Sandip Avlani Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  endIcon={<FaFileDownload />}
                 >
                   Download Resume
                 </Button>
-              </a>
-            </Box>
+              </Box>
+            </Grid>
 
-            <Box
-              sx={{
-                width: "100%",
-                order: { xs: 1, md: 2 },
-                display: "flex",
-                justifyContent: "flex-end",
-              }}
-            >
-              <Tilt>
+            <Grid item xs={12} md={6}>
+              <Box
+                sx={{
+                  width: "100%",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  paddingTop: { xs: "40px", md: "200px" },
+                }}
+              >
                 <img
                   src={HeroImg}
-                  alt="Rishav Chanda"
+                  alt="Ishan Avlani"
                   style={{
-                    borderRadius: "50%",
-                    maxWidth: 400,
-                    maxHeight: 400,
-                    border: "2px solid primary.main",
+                    width: "100%",
+                    maxWidth: 350,
+                    border: "5px solid white",
                   }}
                 />
-              </Tilt>
-            </Box>
-          </motion.div>
+              </Box>
+            </Grid>
+          </Grid>
         </Box>
-      </div>
-      {/* <div>
-        <EducationCard/>
-      </div> */}
-    </>
+      </Box>
+    </Box>
   );
 };
 
-export default Hero;
+export default Home;

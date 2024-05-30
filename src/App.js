@@ -7,6 +7,7 @@ import Skills from "./views/Skills";
 import Navbar from "./components/Navbar";
 import Projects from "./views/Projects";
 import RestrictedPage from "./components/RestrictedPage";
+import Achievements from "./views/Achievements";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -39,12 +40,13 @@ function App() {
           <Route path="*" element={<RestrictedPage />} />
         </Routes>
       </Router> */}
-      <Navbar />
+      {/* <Navbar /> */}
       <Home />
       <Education />
       <Experience />
       <Skills />
       <Projects />
+      <Achievements/>
     </>
   );
 }

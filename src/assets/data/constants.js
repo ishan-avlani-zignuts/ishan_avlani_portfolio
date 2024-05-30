@@ -13,12 +13,18 @@ import holysaints from "../images/holysaints.jpeg";
 import mu from "../images/mu.png";
 import stmarys from "../images/stmarys.jpeg";
 
+//importing company images
 import tcs from "../images/tcs_logo.png"
 
-//project images import
+//importing project images
 import pipelean from "../images/pipelean.png";
 import panto from "../images/panto.png";
+import cars from "../images/cars.jpeg";
+import mendelson from "../images/mendelson.png";
+import shop from "../images/e-shop.png"
+import hotels from "../images/sentiment_analysis.png";
 
+import ishan from "../images/ishan.jpeg";
 export const Bio = {
   name: "Ishan Avlani",
   roles: [
@@ -198,59 +204,58 @@ export const projects = [
     id: 1,
     img: panto,
     name: "Panto UI",
-    desc: "This is a frontend project used to order furniture.",
+    desc: "This is a frontend project used to order your customised furniture.",
     link: "https://github.com/ishan-avlani-zignuts/panto",
   },
 
   {
     id: 2,
-    img: "",
-    name: "",
-    desc: "",
-    link: "",
+    img: cars,
+    name: "Car Rental Management System",
+    desc: "It is a MERN Full Stack Project used to manage the car rental system.",
+    link: "https://github.com/ishan-avlani-zignuts/cars-assignment/tree/main/react-app-test",
   },
 
   {
     id: 3,
-    img: "",
-    name: "",
-    desc: "",
-    link: "",
+    img: hotels,
+    name: "Sentiment Analysis of Hotel Reviews",
+    desc: "This project is used to do analysis of reviews and based on that provides wordcloud to help hotels easily identify issues or good comments.",
+    link: "/restricted",
   },
   {
     id: 4,
-    img: "",
-    name: "",
-    desc: "",
-    link: "",
+    img: mendelson,
+    name: "Mendelson UI",
+    desc: "This is a frontend project for Mendelson which is used for Communication and Engagement.",
+    link: "https://github.com/ishan-avlani-zignuts/figma-ui-assignment/tree/main/mendelson-ui",
   },
   {
     id: 5,
-    img: "",
-    name: "",
-    desc: "",
-    link: "",
-  },
-  {
-    id: 6,
-    img: "",
-    name: "",
-    desc: "",
-    link: "",
-  },
-  {
-    id: 7,
-    img: "",
-    name: "",
-    desc: "",
-    link: "",
-  },
-  {
-    id: 8,
-    img: "",
-    name: "",
-    desc: "",
-    link: "",
+    img: shop,
+    name: "E-Commerce Web App",
+    desc: "This is a E-Commerce web app with Next.js which is used to order things online with great features.",
+    link: "https://github.com/ishan-avlani-zignuts/next-mui-e-commerce/tree/main",
   },
 ];
  
+
+export const achievements = [
+  {
+    id: 0,
+    img: "https://shorturl.at/G6XUB",
+    desc: "Campus Ambassador of Tata Consultancy Services (TCS) in Marwadi University for Academic Year 2022 - 2023",
+  },
+
+  {
+    id: 1,
+    img: ishan,
+    desc: "Got the Early Campus Placement Achievement from Marwadi University",
+  },
+
+  {
+    id: 2,
+    img: "https://shorturl.at/7LRdR",
+    desc: "Completed Computer Engineering with 1st Rank by securing 10 / 10 SGPA throughout the last year.",
+  },
+];

@@ -8,7 +8,7 @@ import { Box, Typography} from "@mui/material";
 const Experience = () => {
   return (
     <Box
-      id="Experience"
+      id="experience"
       sx={{
         paddingTop: "100px",
         display: "flex",
@@ -43,7 +43,7 @@ const Experience = () => {
             color: "wheat",
           }}
         >
-          Experience
+          Experience 💼
         </Typography>
         <Typography
           variant="h6"
@@ -55,8 +55,8 @@ const Experience = () => {
             marginBottom: "40px",
           }}
         >
-          My work experience as a software engineer and working on different
-          companies and projects.
+          My professional journey as a Software Engineer includes diverse
+          experiences across various companies and projects.
         </Typography>
 
         <VerticalTimeline>

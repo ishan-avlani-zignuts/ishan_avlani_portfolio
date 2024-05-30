@@ -9,14 +9,14 @@ import "react-vertical-timeline-component/style.min.css";
 const Education = () => {
   return (
     <Box
-      id="Education"
+      id="education"
       sx={{
         paddingTop: "50px",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        backgroundColor : "black",
-        color:"white"
+        backgroundColor: "black",
+        color: "white",
       }}
     >
       <Box
@@ -44,7 +44,7 @@ const Education = () => {
             color: "wheat",
           }}
         >
-          Education
+          Education 🎓
         </Typography>
         <Typography
           variant="h6"
