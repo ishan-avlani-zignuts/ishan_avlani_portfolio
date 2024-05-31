@@ -5,7 +5,7 @@ import { Box, Typography } from "@mui/material";
 
 const Skills = () => (
   <Box
-  id="skills"
+    id="skills"
     display={"flex"}
     flexDirection={"column"}
     sx={{ backgroundColor: "black" }}
@@ -64,7 +64,7 @@ const Skills = () => (
               src={skill.img}
               sx={{
                 objectFit: "cover",
-                // border:"1px solid red"
+                // border:"1px solid wheat"
               }}
             />
             <Typography

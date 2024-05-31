@@ -26,7 +26,7 @@ import hotels from "../images/sentiment_analysis.png";
 
 import ishan from "../images/ishan.jpeg";
 export const Bio = {
-  name: "Ishan Avlani",
+  name: "Ishan Sandip Avlani",
   roles: [
     "Software Developer",
     "MERN Stack Developer",
@@ -195,8 +195,8 @@ export const projects = [
   {
     id: 0,
     img: pipelean,
-    name: "Pipelean.io",
-    desc: "It is a conversational CRM which is used to increase the sales rapidly. It is a live project from Portugal.",
+    name: "Conversational CRM System",
+    desc: "It is a conversational CRM which is used to increase the sales rapidly. It is a live project from Europe.",
     link: "/restricted",
   },
 

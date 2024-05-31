@@ -1,11 +1,23 @@
-import React from 'react'
+import React from "react";
 import restricted from "../assets/images/restricted_page.png";
+
 const RestrictedPage = () => {
   return (
-    <div>
-      <img src={restricted} alt='' width={"100%"} height={"100%"}/>
+    <div
+      style={{
+        height: "100vh",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <img
+        src={restricted}
+        alt="Restricted Page"
+        style={{ maxWidth: "100%", maxHeight: "100%", objectFit: "contain" }}
+      />
     </div>
-  )
-}
+  );
+};
 
-export default RestrictedPage
+export default RestrictedPage;

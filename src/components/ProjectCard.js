@@ -5,7 +5,8 @@ const ProjectCard = ({ project }) => {
   return (
     <div
       style={{
-        width: "350px",
+        maxWidth: "350px",
+        width:"100%",
         height: "320px",
         backgroundColor: "#232F3A",
         cursor: "pointer",
@@ -59,7 +60,7 @@ const ProjectCard = ({ project }) => {
       </div>
       <div style={{ textAlign: "center", marginTop: "auto" }}>
         <Button
-          variant="contained"
+          variant="outlined"
           color="primary"
           href={project.link}
           target="_blank"

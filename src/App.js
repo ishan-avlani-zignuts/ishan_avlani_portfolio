@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./views/Home";
-import Education from "./views/Education";
-import Experience from "./views/Experience";
-import Skills from "./views/Skills";
-import Navbar from "./components/Navbar";
-import Projects from "./views/Projects";
+// import Home from "./views/AboutMe";
+// import Education from "./views/Education";
+// import Experience from "./views/Experience";
+// import Skills from "./views/Skills";
+// import Navbar from "./components/Navbar";
+// import Projects from "./views/Projects";
 import RestrictedPage from "./components/RestrictedPage";
-import Achievements from "./views/Achievements";
+import Home from "./views/Home";
+// import Achievements from "./views/Achievements";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -35,18 +36,12 @@ function App() {
 
   return (
     <>
-      {/* <Router>
+      <Router>
         <Routes>
           <Route path="*" element={<RestrictedPage />} />
+          <Route path="/" element={<Home/>} />
         </Routes>
-      </Router> */}
-      {/* <Navbar /> */}
-      <Home />
-      <Education />
-      <Experience />
-      <Skills />
-      <Projects />
-      <Achievements/>
+      </Router>
     </>
   );
 }
