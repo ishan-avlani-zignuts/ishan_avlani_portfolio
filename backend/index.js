@@ -29,9 +29,9 @@ transporter.verify((error, success) => {
 
 // API endpoint to handle form submission
 app.post("/sendEmail", (req, res) => {
-  const { email, message } = req.body;
+  const { email, message, number, name } = req.body;
 
-  if (!email || !message) {
+  if (!email || !message || !number || !email) {
     return res
       .status(400)
       .json({ success: false, message: "Email and message are required." });
@@ -39,9 +39,9 @@ app.post("/sendEmail", (req, res) => {
 
   const mailOptions = {
     from: email,
-    to: "ishan.avlani119@gmail.com", 
+    to: "ishan.avlani119@gmail.com",
     subject: "New Email from Your Website",
-    text: `You received a new email from ${email}.\n\nMessage:\n${message}`,
+    text: `You received a new email from ${email}.\n\nName:\n${name}.\n\nContact Number:\n${number}.\n\nMessage:\n${message}`,
   };
 
   transporter.sendMail(mailOptions, (error, info) => {

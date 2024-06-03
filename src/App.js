@@ -1,14 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-// import Home from "./views/AboutMe";
-// import Education from "./views/Education";
-// import Experience from "./views/Experience";
-// import Skills from "./views/Skills";
-// import Navbar from "./components/Navbar";
-// import Projects from "./views/Projects";
 import RestrictedPage from "./components/RestrictedPage";
 import Home from "./views/Home";
-// import Achievements from "./views/Achievements";
 
 function App() {
   const [loading, setLoading] = useState(true);

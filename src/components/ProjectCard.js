@@ -18,7 +18,7 @@ const ProjectCard = ({ project }) => {
         flexDirection: "column",
         gap: "14px",
         transition: "all 0.5s ease-in-out",
-        border: "1px solid white",
+        border: "1px solid wheat",
       }}
     >
       <img
@@ -58,9 +58,9 @@ const ProjectCard = ({ project }) => {
           {project.desc}
         </div>
       </div>
-      <div style={{ textAlign: "center", marginTop: "auto" }}>
+      <div style={{ textAlign: "center", marginTop: "auto"}}>
         <Button
-          variant="outlined"
+          variant="contained"
           color="primary"
           href={project.link}
           target="_blank"

@@ -9,8 +9,8 @@ import {
   ListItemIcon,
   ListItemText,
   IconButton,
+  Button,
 } from "@mui/material";
-
 import MenuIcon from "@mui/icons-material/Menu";
 import HomeIcon from "@mui/icons-material/Home";
 import SchoolIcon from "@mui/icons-material/School";
@@ -18,7 +18,9 @@ import WorkIcon from "@mui/icons-material/Work";
 import CodeIcon from "@mui/icons-material/Code";
 import BuildIcon from "@mui/icons-material/Build";
 import StarsIcon from "@mui/icons-material/Stars";
-
+import ContactMailIcon from "@mui/icons-material/ContactMail";
+import { FaFileDownload } from "react-icons/fa";
+import resume from "../assets/Ishan Sandip Avlani Resume.pdf";
 const Navbar = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
 
@@ -32,6 +34,11 @@ const Navbar = () => {
     setOpenDrawer(open);
   };
 
+  const handleLinkClick = (href) => () => {
+    window.location.href = href;
+    setOpenDrawer(false);
+  };
+
   return (
     <Box
       sx={{
@@ -42,6 +49,7 @@ const Navbar = () => {
         left: 0,
         right: 0,
         zIndex: 1000,
+        width: "100%",
       }}
     >
       <Box
@@ -49,29 +57,53 @@ const Navbar = () => {
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
-          maxWidth: "1200px",
+          maxWidth: "1800px",
+          width: "100%",
           margin: "0 auto",
-          padding: "10px 20px",
+          padding: { xs: "10px", md: "10px 20px" },
         }}
       >
         <Typography variant="h5">{"<Ishan Sandip Avlani />"}</Typography>
 
         <Box
           sx={{
-            display: { xs: "block", lg: "none" },
+            display: { xs: "none", lg: "flex" },
+            flex: 1,
+            justifyContent: "center",
           }}
         >
-          <IconButton onClick={toggleDrawer(true)} color="inherit">
-            <MenuIcon />
-          </IconButton>
+          <NavigationLinks />
         </Box>
 
         <Box
           sx={{
             display: { xs: "none", lg: "flex" },
+            justifyContent: "flex-end",
+            paddingRight: "25px",
           }}
         >
-          <NavigationLinks />
+          <Button
+            variant="contained"
+            endIcon={<FaFileDownload />}
+            color="primary"
+            href={resume}
+            download="Ishan Sandip Avlani Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Download CV
+          </Button>
+        </Box>
+
+        <Box
+          sx={{
+            display: { xs: "block", lg: "none" },
+            paddingRight: "25px",
+          }}
+        >
+          <IconButton onClick={toggleDrawer(true)} color="inherit">
+            <MenuIcon />
+          </IconButton>
         </Box>
       </Box>
 
@@ -94,8 +126,19 @@ const Navbar = () => {
                 icon: <StarsIcon />,
                 href: "#achievements",
               },
+              {
+                text: "Contact Me",
+                icon: <ContactMailIcon />,
+                href: "#contacts",
+              },
             ].map((item) => (
-              <ListItem button key={item.text} component="a" href={item.href}>
+              <ListItem
+                button
+                key={item.text}
+                component="a"
+                href={item.href}
+                onClick={handleLinkClick(item.href)}
+              >
                 <ListItemIcon>{item.icon}</ListItemIcon>
                 <ListItemText primary={item.text} />
               </ListItem>
@@ -116,11 +159,23 @@ const NavigationLinks = () => (
       { text: "Skills", icon: <CodeIcon />, href: "#skills" },
       { text: "Projects", icon: <BuildIcon />, href: "#projects" },
       { text: "Achievements", icon: <StarsIcon />, href: "#achievements" },
+      {
+        text: "Contact Me",
+        icon: <ContactMailIcon />,
+        href: "#contacts",
+      },
     ].map((item) => (
       <Link
         key={item.text}
         href={item.href}
-        sx={{ textDecoration: "none", color: "inherit", marginRight: 2 }}
+        sx={{
+          textDecoration: "none",
+          color: "inherit",
+          marginRight: 2,
+          "&:hover": {
+            textDecoration: "underline",
+          },
+        }}
       >
         <Box display="flex" alignItems="center">
           {item.icon}
@@ -132,4 +187,3 @@ const NavigationLinks = () => (
 );
 
 export default Navbar;
-

@@ -27,7 +27,7 @@ const Education = ({ education }) => {
         color: "white",
         boxShadow: "rgba(23, 92, 230, 0.15) 0px 4px 24px",
         backgroundColor: "rgba(17, 25, 40, 0.83)",
-        border: "1px solid rgba(255, 255, 255, 0.125)",
+        border: "1px solid wheat",
         borderRadius: "6px",
       }}
       contentArrowStyle={{
