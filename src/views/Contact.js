@@ -26,8 +26,10 @@ const EmailForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:3001/sendEmail", { //for local 
-      // const response = await axios.post("https://ishan-avlani-portfolio.vercel.app/sendEmail", { //for live
+     
+      // const response = await axios.post("https://mailtrap.io", {
+      //   // const response = await axios.post("http://localhost:3001/sendEmail", { //for local
+      const response = await axios.post("https://ishan-avlani-portfolio.vercel.app/sendEmail", { //for live
         name,
         email,
         number,
