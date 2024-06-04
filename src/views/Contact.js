@@ -26,7 +26,7 @@ const EmailForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:3001/sendEmail", {
+      const response = await axios.post("/sendEmail", {
         name,
         email,
         number,
@@ -45,10 +45,10 @@ const EmailForm = () => {
   return (
     <Box
       id="contacts"
+      px={"25px"}
       sx={{
         backgroundColor: "black",
         minHeight: "100vh",
-        p: 3,
         paddingTop: "75px",
         display: "flex",
         flexDirection: "column",
