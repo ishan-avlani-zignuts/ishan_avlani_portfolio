@@ -8,15 +8,15 @@ import {
   Card,
   CardContent,
   InputAdornment,
-  Link,
-  IconButton,
+  // Link,
+  // IconButton,
 } from "@mui/material";
 import axios from "axios";
 import { BiMessageAltDetail } from "react-icons/bi";
 import { IoMdMail } from "react-icons/io";
 import { FaPhoneAlt, FaUserAlt } from "react-icons/fa";
 
-import { FaFacebook, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
+// import { FaFacebook, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 const EmailForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -26,8 +26,8 @@ const EmailForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      // const response = await axios.post("http://localhost:3001/sendEmail", {
-      const response = await axios.post("https://ishan-avlani-portfolio.vercel.app/sendEmail", {
+      const response = await axios.post("http://localhost:3001/sendEmail", { //for local 
+      // const response = await axios.post("https://ishan-avlani-portfolio.vercel.app/sendEmail", { //for live
         name,
         email,
         number,
