@@ -24,24 +24,25 @@ const EmailForm = () => {
   const [message, setMessage] = useState("");
 
   const handleSubmit = async (e) => {
+    console.log("called")
     e.preventDefault();
     try {
-     
-      // const response = await axios.post("https://mailtrap.io", {
-      //   // const response = await axios.post("http://localhost:3001/sendEmail", { //for local
-      const response = await axios.post("https://ishan-backend.vercel.app/sendEmail", { //for live
+      // // const response = await axios.post("https://ishan-backend.vercel.app/sendEmail", { //for live
+
+      const response = await axios.post("http://localhost:3001/sendEmail", {
+        
         name,
         email,
         number,
         message,
       });
-      // console.log(response.data.message);
+      console.log(response.data.message);
       setName("");
       setEmail("");
       setNumber("");
       setMessage("");
     } catch (error) {
-      // console.error("Error occurred:", error);
+      console.error("Error occurred:", error);
     }
   };
 
