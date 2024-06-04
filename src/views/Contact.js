@@ -27,9 +27,9 @@ const EmailForm = () => {
     console.log("called")
     e.preventDefault();
     try {
-      // // const response = await axios.post("https://ishan-backend.vercel.app/sendEmail", { //for live
+      const response = await axios.post("https://ishan-backend.vercel.app/sendEmail", { //for live
 
-      const response = await axios.post("http://localhost:3001/sendEmail", {
+      // const response = await axios.post("http://localhost:3001/sendEmail", {
         
         name,
         email,
