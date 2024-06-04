@@ -26,7 +26,8 @@ const EmailForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("/sendEmail", {
+      // const response = await axios.post("http://localhost:3001/sendEmail", {
+      const response = await axios.post("https://ishan-avlani-portfolio.vercel.app/sendEmail", {
         name,
         email,
         number,
