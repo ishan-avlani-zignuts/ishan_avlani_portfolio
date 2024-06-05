@@ -54,7 +54,7 @@ const Projects = () => {
             color: "wheat",
           }}
         >
-          Projects
+          Projects 🎯
         </Typography>
         <Typography
           variant="body1"
@@ -66,8 +66,8 @@ const Projects = () => {
             marginBottom: "40px",
           }}
         >
-          I have undertaken a wide variety of projects.
-          Here are a few notable examples of my work.
+          I have undertaken a wide variety of projects. Here are a few notable
+          examples of my work.
         </Typography>
         <div
           style={{

@@ -22,7 +22,7 @@ const Skills = () => (
           color: "wheat",
         }}
       >
-        My Tech Skills
+        My Tech Skills 🚀
       </Typography>
       <Typography
         variant="h6"
@@ -64,7 +64,6 @@ const Skills = () => (
               src={skill.img}
               sx={{
                 objectFit: "cover",
-                // border:"1px solid wheat"
               }}
             />
             <Typography

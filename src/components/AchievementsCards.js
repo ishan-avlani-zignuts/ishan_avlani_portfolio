@@ -41,6 +41,7 @@ const AchievementCard = ({ img, desc, reverse }) => {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
+          flex:"1"
         }}
       >
         <Typography

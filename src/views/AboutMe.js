@@ -11,7 +11,7 @@ const AboutMe = () => {
   return (
     <Box id="aboutme">
       <Navbar />
-      <Box id="About" sx={{ backgroundColor: "black", minHeight: "100vh" }}>
+      <Box sx={{ backgroundColor: "black", minHeight: "100vh" }}>
         <Grid container>
           <Grid
             item
@@ -22,16 +22,16 @@ const AboutMe = () => {
               flexDirection: "column",
               justifyContent: "center",
               alignItems: { xs: "center", md: "flex-start" },
-              padding: { xs: "20px", md: "0 0 0 60px" },      
-              paddingTop:{xs:"125px"},
-              paddingLeft:{md:"70px"},
+              padding: { xs: "20px", md: "0 0 0 60px" },
+              paddingTop: { xs: "125px" },
+              paddingLeft: { md: "70px" },
               textAlign: { xs: "center", md: "left" },
               color: "white",
               height: { xs: "auto", md: "100vh" },
             }}
           >
             <Typography variant="h4" sx={{ fontWeight: 700 }}>
-              Hi, 👋  I am <span style={{ color: "wheat" }}>{Bio.name}</span>
+              Hi, 👋 I am <span style={{ color: "wheat" }}>{Bio.name}</span>
             </Typography>
             <Box
               sx={{
@@ -45,13 +45,20 @@ const AboutMe = () => {
               }}
             >
               I am a &nbsp;
-              <Typewriter
-                options={{
-                  strings: Bio.roles,
-                  autoStart: true,
-                  loop: true,
+              <Box
+                component="span"
+                sx={{
+                  color: "wheat",
                 }}
-              />
+              >
+                <Typewriter
+                  options={{
+                    strings: Bio.roles,
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
+              </Box>
             </Box>
             <Typography variant="body1" sx={{ fontSize: 20 }}>
               {Bio.description}
@@ -59,12 +66,20 @@ const AboutMe = () => {
             <Box marginTop={"20px"}>
               <Button
                 variant="contained"
-                color="primary"
+                endIcon={<FaFileDownload />}
+                sx={{
+                  background:
+                    "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)",
+                  color: "white",
+                  "&:hover": {
+                    background:
+                      "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)",
+                  },
+                }}
                 href={resume}
                 download="Ishan Sandip Avlani Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                endIcon={<FaFileDownload />}
               >
                 Download CV
               </Button>

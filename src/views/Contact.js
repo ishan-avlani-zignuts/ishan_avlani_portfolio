@@ -8,15 +8,12 @@ import {
   Card,
   CardContent,
   InputAdornment,
-  // Link,
-  // IconButton,
 } from "@mui/material";
 import axios from "axios";
 import { BiMessageAltDetail } from "react-icons/bi";
 import { IoMdMail } from "react-icons/io";
 import { FaPhoneAlt, FaUserAlt } from "react-icons/fa";
-
-// import { FaFacebook, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
+import Footer from "../components/Footer";
 const EmailForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -30,7 +27,7 @@ const EmailForm = () => {
       const response = await axios.post(
         "https://ishan-backend.onrender.com/sendEmail",
         {
-          //for live
+          //for local
 
           // const response = await axios.post("http://localhost:3001/sendEmail", {
 
@@ -56,16 +53,38 @@ const EmailForm = () => {
       px={"25px"}
       sx={{
         backgroundColor: "black",
-        minHeight: "100vh",
         paddingTop: "75px",
         display: "flex",
         flexDirection: "column",
-        alignItems: "center",
+        alignItems: "center", 
       }}
     >
       <Grid item>
-        <Typography sx={{ color: "wheat", paddingBottom: "25px" }} variant="h3">
-          Let's get connected
+        <Typography
+          variant="h1"
+          sx={{
+            fontSize: { xs: "32px", sm: "52px" },
+            textAlign: "center",
+            fontWeight: 600,
+            marginTop: { xs: "12px", sm: "20px" },
+            color: "wheat",
+          }}
+        >
+          Let's Connect 🤝
+        </Typography>
+        <Typography
+          variant="h6"
+          sx={{
+            fontSize: { xs: "16px", sm: "18px" },
+            textAlign: "center",
+            fontWeight: 600,
+            color: "wheat",
+            marginTop: "5px",
+            marginBottom: "40px",
+          }}
+        >
+          Join my network and let's stay connected. Together, we can share
+          ideas, opportunities, grow and collaborate. So DM me now !!
         </Typography>
       </Grid>
       <Grid container spacing={4} justifyContent="center">
@@ -86,7 +105,7 @@ const EmailForm = () => {
                 paddingBottom={"20px"}
                 color={"wheat"}
               >
-                Contact Me
+                DM me now !!
               </Typography>
               <form onSubmit={handleSubmit}>
                 <Grid container spacing={3}>
@@ -204,76 +223,8 @@ const EmailForm = () => {
         </Grid>
       </Grid>
 
-      <Grid item sx={{ paddingTop: "25px" }}>
-        <Box
-          sx={{
-            backgroundColor: "#232F3A",
-            color: "white",
-            width: "100%",
-            padding: "10px 20px",
-            display: "flex",
-
-            justifyContent: "space-between",
-            alignItems: "center",
-            flexDirection: { xs: "column", sm: "row" },
-          }}
-        >
-          <Typography
-            variant="body2"
-            sx={{
-              flex: 1,
-              fontSize: "16px",
-              textAlign: { xs: "center", sm: "left" },
-              mb: { xs: 1, sm: 0 },
-              fontSize:"16px",
-            }}
-          >
-            &copy; 2024 Ishan Sandip Avlani. All rights reserved.
-          </Typography>
-
-          {/* <Box sx={{ display: "flex", gap: 2 }}>
-            <Link
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener"
-              color="inherit"
-            >
-              <IconButton color="inherit">
-                <FaFacebook />
-              </IconButton>
-            </Link>
-            <Link
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener"
-              color="inherit"
-            >
-              <IconButton color="inherit">
-                <FaTwitter />
-              </IconButton>
-            </Link>
-            <Link
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener"
-              color="inherit"
-            >
-              <IconButton color="inherit">
-                <FaLinkedin />
-              </IconButton>
-            </Link>
-            <Link
-              href="https://github.com"
-              target="_blank"
-              rel="noopener"
-              color="inherit"
-            >
-              <IconButton color="inherit">
-                <FaGithub />
-              </IconButton>
-            </Link>
-          </Box> */}
-        </Box>
+      <Grid item sx={{ paddingTop: "25px" , width:"100%"}}>
+        <Footer />
       </Grid>
     </Box>
   );

@@ -7,7 +7,7 @@ const ProjectCard = ({ project }) => {
       style={{
         maxWidth: "350px",
         width:"100%",
-        height: "320px",
+        height: "350px",
         backgroundColor: "#232F3A",
         cursor: "pointer",
         borderRadius: "10px",
@@ -28,7 +28,6 @@ const ProjectCard = ({ project }) => {
           minHeight: "180px",
           maxHeight: "180px",
           backgroundColor: "#fff",
-          borderRadius: "10px",
           boxShadow: "0 0 16px 2px rgba(0, 0, 0, 0.3)",
         }}
         alt={project.name}
@@ -58,7 +57,8 @@ const ProjectCard = ({ project }) => {
           {project.desc}
         </div>
       </div>
-      <div style={{ textAlign: "center", marginTop: "auto"}}>
+      <div style={{ textAlign: "center", marginTop: "auto",
+      }}>
         <Button
           variant="contained"
           color="primary"

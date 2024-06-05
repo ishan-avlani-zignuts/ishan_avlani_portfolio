@@ -50,28 +50,26 @@ const Education = ({ education }) => {
           <Typography
             variant="h6"
             fontWeight="600"
-            color={"white"}
+            color={"wheat"}
             sx={{
               fontSize: { xs: "14px", sm: "18px" },
-            }}
-          >
-            {education.school}
-          </Typography>
-          <Typography
-            variant="body2"
-            fontWeight="500"
-            // color={(theme) => `${theme.palette.text.secondary}99`}
-            color={"white"}
-            sx={{
-              fontSize: { xs: "12px", sm: "14px" },
             }}
           >
             {education.degree}
           </Typography>
           <Typography
             variant="body2"
+            fontWeight="500"
+            color={"wheat"}
+            sx={{
+              fontSize: { xs: "12px", sm: "14px" },
+            }}
+          >
+            {education.school}
+          </Typography>
+          <Typography
+            variant="body2"
             fontWeight="400"
-            // color={(theme) => `${theme.palette.text.secondary}80`}
             sx={{
               fontSize: { xs: "10px", sm: "12px" },
               color:"white"
@@ -84,7 +82,7 @@ const Education = ({ education }) => {
       <Typography
         variant="body2"
         fontWeight="500"
-        color={(theme) => `${theme.palette.text.secondary}99`}
+        color="wheat"
         sx={{
           fontSize: { xs: "12px", sm: "14px" },
         }}

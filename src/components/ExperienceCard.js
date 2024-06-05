@@ -49,14 +49,14 @@ const ExperienceCard = ({ experience }) => {
           <Typography
             variant="h6"
             component="div"
-            sx={{ fontWeight: 600, color: "white" }}
+            sx={{ fontWeight: 600, color: "wheat" }}
           >
             {experience.role}
           </Typography>
           <Typography
             variant="body2"
             component="div"
-            sx={{ fontWeight: 500, color: "white" }}
+            sx={{ fontWeight: 500, color: "wheat" ,paddingBottom : "5px"}}
           >
             {experience.company}
           </Typography>
@@ -84,7 +84,7 @@ const ExperienceCard = ({ experience }) => {
             <Typography
               variant="body2"
               component="div"
-              sx={{ fontWeight: 500, color: "white", paddingBottom: "20px" }}
+              sx={{ fontWeight: 500, color: "wheat", paddingBottom: "20px" }}
             >
               Skills:
             </Typography>

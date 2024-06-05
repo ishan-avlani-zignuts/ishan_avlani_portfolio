@@ -1,3 +1,4 @@
+// skills images
 import react from "../images/react.svg";
 import redux from "../images/redux.svg"
 import next from "../images/next.png"
@@ -9,22 +10,30 @@ import mui from "../images/mui.png";
 import mongo from "../images/mongodb.jpeg";
 import node from "../images/node.jpeg"
 
+// education images
 import holysaints from "../images/holysaints.jpeg";
 import mu from "../images/mu.png";
 import stmarys from "../images/stmarys.jpeg";
 
-//importing company images
+// company images
 import tcs from "../images/tcs_logo.png"
+import ace from "../images/ace.jpeg"
+import zignuts from "../images/zignuts_logo.png"
 
-//importing project images
-import pipelean from "../images/pipelean.png";
+// project images
+import crm from "../images/crm.png";
 import panto from "../images/panto.png";
 import cars from "../images/cars.jpeg";
 import mendelson from "../images/mendelson.png";
 import shop from "../images/e-shop.png"
 import hotels from "../images/sentiment_analysis.png";
 
+// achievements images
 import ishan from "../images/ishan.jpeg";
+import ambassador from "../images/ambassador.jpg"
+import first from "../images/first.webp"
+
+// About me Data
 export const Bio = {
   name: "Ishan Sandip Avlani",
   roles: [
@@ -35,12 +44,9 @@ export const Bio = {
   ],
   description:
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
-  github: "https://github.com/ishan-avlani-zignuts",
-  resume:
-    "https://drive.google.com/file/d/1txFKZD3LNIXMc329jD9c995AU8LItOXK/view?usp=drive_link",
-  linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
 };
 
+// Education Data
 export const education = [
   {
     id: 0,
@@ -55,7 +61,7 @@ export const education = [
     id: 1,
     img: stmarys,
     school: "St. Mary's School, Rajkot, Gujarat",
-    date: "2018 - 2020",
+    date: "2019 - 2020",
     grade: "70 PR",
     desc: "I completed my class 12 high school education at St. Mary's School, Rajkot,  where I studied 11th and 12th standard.",
     degree: "Class 12th, Science with PCM, State Board",
@@ -64,21 +70,22 @@ export const education = [
     id: 2,
     img: holysaints,
     school: "Holy Saints School, Rajkot, Gujarat",
-    date: "Start - 2018",
+    date: "2017 - 2018",
     grade: "93 PR",
     desc: "I completed my 10th-grade education at Holy Saints School, Rajkot, where I studied up to the 10th standard.",
     degree: "Class 10th, State Board",
   },
 ];
 
+// Experience Data
 export const experiences = [
   {
     id: 0,
-    img: "http://surl.li/tzomb",
-    role: "Software Developer Intern",
+    img: zignuts,
+    role: "Software Developer",
     company: "Zignuts Technolab Pvt. Ltd.",
     date: "January 2024 - Present",
-    desc: "This is the Campus Placement. Here First 6 Months were Internship with stipend and then I am permanent employee. I am working in the live project named Pipelean.io which is from UK, Europe.",
+    desc: "This is the Campus Placement. I have experience of working in live projects which are now being used in Europe and other different parts of the world.",
     skills: [
       "React.js",
       "Redux",
@@ -95,7 +102,7 @@ export const experiences = [
 
   {
     id: 1,
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLuYMsHYO063wSlxQazxoKKx2ti07UZFe2cA&s",
+    img: ace,
     role: "Software Developer Intern",
     company: "Ace Infoway Pvt. Ltd.",
     date: "May 2023 - July 2023",
@@ -114,7 +121,6 @@ export const experiences = [
 
   {
     id: 2,
-    // img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Tata_Consultancy_Services_Logo.svg/2560px-Tata_Consultancy_Services_Logo.svg.png",
     img: tcs,
     role: "Campus Ambassador",
     company: "Tata Consultancy Services (TCS) ",
@@ -130,6 +136,7 @@ export const experiences = [
   },
 ];
 
+// Skills Data
 export const skills = [
   {
     id: 0,
@@ -191,10 +198,11 @@ export const skills = [
   },
 ];
 
+// Projects Data
 export const projects = [
   {
     id: 0,
-    img: pipelean,
+    img: crm,
     name: "Conversational CRM System",
     desc: "It is a conversational CRM which is used to increase the sales rapidly. It is a live project from Europe.",
     link: "/restricted",
@@ -239,11 +247,11 @@ export const projects = [
   },
 ];
  
-
+// Achievements Data
 export const achievements = [
   {
     id: 0,
-    img: "https://shorturl.at/G6XUB",
+    img: ambassador,
     desc: "Campus Ambassador of Tata Consultancy Services (TCS) in Marwadi University for Academic Year 2022 - 2023",
   },
 
@@ -255,7 +263,7 @@ export const achievements = [
 
   {
     id: 2,
-    img: "https://shorturl.at/7LRdR",
-    desc: "Completed Computer Engineering with 1st Rank by securing 10 / 10 SGPA throughout the last year.",
+    img: first,
+    desc: "Completed Computer Engineering with First Rank by securing 10 / 10 SGPA throughout the last year.",
   },
 ];
