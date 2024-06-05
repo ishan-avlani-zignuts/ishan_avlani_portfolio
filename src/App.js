@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import RestrictedPage from "./components/RestrictedPage";
 import Home from "./views/Home";
+import Loader from "./components/Loader";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -22,8 +23,11 @@ function App() {
           justifyContent: "center",
           alignItems: "center",
           height: "100vh",
+          backgroundColor : "black"
         }}
-      ></div>
+      >
+        <Loader/>
+      </div>
     );
   }
 

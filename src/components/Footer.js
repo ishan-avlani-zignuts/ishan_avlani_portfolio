@@ -13,12 +13,13 @@ const Footer = () => {
       sx={{
         backgroundColor: "#232F3A",
         color: "white",
-        padding: "10px 20px",
+        padding:"20px",
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
         flexDirection: { xs: "column", sm: "row" },
       }}
+   
     >
       <Typography
         sx={{

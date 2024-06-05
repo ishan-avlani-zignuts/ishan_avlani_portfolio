@@ -51,6 +51,7 @@ const Navbar = () => {
         zIndex: 1000,
         width: "100%",
       }}
+      py={"11px"}
     >
       <Box
         sx={{
