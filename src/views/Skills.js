@@ -39,7 +39,7 @@ const Skills = () => (
         hands-on experience and continuous learning.
       </Typography>
     </Box>
-    <Marquee gradient={false} speed={50} loop={0}>
+    <Marquee gradient={false} speed={200} loop={0}>
       <Box
         display="flex"
         justifyContent={"space-between"}
@@ -59,7 +59,7 @@ const Skills = () => (
             <Box
               component="img"
               width="auto"
-              height="150px"
+              height={{xs:"50px", sm:"75px", md:"120px", lg:"150px"}}
               alt={skill.desc}
               src={skill.img}
               sx={{

@@ -1,14 +1,14 @@
 // skills images
 import react from "../images/react.svg";
-import redux from "../images/redux.svg"
-import next from "../images/next.png"
+import redux from "../images/redux.svg";
+import next from "../images/next.png";
 import html from "../images/html.png";
 import css from "../images/css.png";
 import js from "../images/js.png";
 import bootstrap from "../images/bootstrap.png";
 import mui from "../images/mui.png";
 import mongo from "../images/mongodb.jpeg";
-import node from "../images/node.jpeg"
+import node from "../images/node.jpeg";
 
 // education images
 import holysaints from "../images/holysaints.jpeg";
@@ -16,22 +16,22 @@ import mu from "../images/mu.png";
 import stmarys from "../images/stmarys.jpeg";
 
 // company images
-import tcs from "../images/tcs_logo.png"
-import ace from "../images/ace.jpeg"
-import zignuts from "../images/zignuts_logo.png"
+import tcs from "../images/tcs_logo.png";
+import ace from "../images/ace.jpeg";
+import zignuts from "../images/zignuts_logo.png";
 
 // project images
 import crm from "../images/crm.png";
 import panto from "../images/panto.png";
 import cars from "../images/cars.jpeg";
 import mendelson from "../images/mendelson.png";
-import shop from "../images/e-shop.png"
+import shop from "../images/e-shop.png";
 import hotels from "../images/sentiment_analysis.png";
 
 // achievements images
-import ishan from "../images/ishan.jpeg";
-import ambassador from "../images/ambassador.jpg"
-import first from "../images/first.webp"
+import ishan from "../images/achievement.jpeg";
+import ambassador from "../images/ambassador.jpg";
+import first from "../images/first.webp";
 
 // About me Data
 export const Bio = {
@@ -85,7 +85,7 @@ export const experiences = [
     role: "Software Developer",
     company: "Zignuts Technolab Pvt. Ltd.",
     date: "January 2024 - Present",
-    desc: "This is the Campus Placement. I have experience of working in live projects which are now being used in Europe and other different parts of the world.",
+    desc: "I work at Zignuts Technolab Pvt. Ltd. as a Software Developer, where I create and manage innovative software solutions for clients around the world. Using modern technologies, I design, develop, and test software applications. I work collaboratively with cross-functional teams to provide dependable, scalable solutions that meet client requirements and exceed expectations. I work in a variety of industries, such as banking, e-commerce, and healthcare, so I'm able to get a broad range of knowledge in solving challenging business problems with cutting-edge technologies.",
     skills: [
       "React.js",
       "Redux",
@@ -106,7 +106,7 @@ export const experiences = [
     role: "Software Developer Intern",
     company: "Ace Infoway Pvt. Ltd.",
     date: "May 2023 - July 2023",
-    desc: "This was a summer internship where I worked in project of Food Ordering Website",
+    desc: "During my internship at Ace Infoway Pvt. Ltd., I had the opportunity to work on a challenging project: a Food Ordering System. This project allowed me to apply cutting-edge technologies and best practices in Software Development. I designed and implemented the system from scratch, showcasing my skills in frontend and backend development, database management, and user interface design. This experience has strengthened my problem-solving abilities and deepened my understanding of software development lifecycle.",
     skills: [
       "React.js",
       "Node.js",
@@ -125,13 +125,14 @@ export const experiences = [
     role: "Campus Ambassador",
     company: "Tata Consultancy Services (TCS) ",
     date: "June 2022 - May 2023",
-    desc: "Here as a Ambassador in my University I have served as mediator between Marwadi University and TCS. I had to do promotions, sales and placement help to students.",
+    desc: "As a Campus Ambassador of Tata Consultancy Services (TCS) at Marwadi University, I bridged the gap between the University and Tata Consultancy Services (TCS), focusing on promotions, sales, and student placement support. I promoted TCS's career opportunities through workshops and events, enhancing student engagement and career readiness. I also provided guidance to students on resumes, interviews, and professional development, ensuring a seamless recruitment process. This role honed my skills in communication, project management, and fostering partnerships between academics and industry. 450 + students registered for TCS NQT Exam for placements under my era.",
     skills: [
       "Management",
       "Promotions",
       "Sales",
       "Public Speaking",
       "Event Management",
+      "Placement Support",
     ],
   },
 ];
@@ -204,7 +205,7 @@ export const projects = [
     id: 0,
     img: crm,
     name: "Conversational CRM System",
-    desc: "It is a conversational CRM which is used to increase the sales rapidly. It is a live project from Europe.",
+    desc: "It is a world`s first conversational CRM which is used to increase the sales rapidly. It is a live project from Europe.",
     link: "/restricted",
   },
 
@@ -246,7 +247,7 @@ export const projects = [
     link: "https://github.com/ishan-avlani-zignuts/next-mui-e-commerce/tree/main",
   },
 ];
- 
+
 // Achievements Data
 export const achievements = [
   {

@@ -33,8 +33,8 @@ const EmailForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const onSubmit = async (data) => {
-    console.time("sendEmailAPI"); // Start timer
- setIsSubmitting(true);
+    console.time("sendEmailAPI");
+    setIsSubmitting(true);
     try {
       const response = await axios.post(
         "https://ishan-backend.onrender.com/sendEmail",
@@ -46,7 +46,7 @@ const EmailForm = () => {
         }
       );
 
-      console.timeEnd("sendEmailAPI"); // End timer
+      console.timeEnd("sendEmailAPI");
 
       setName("");
       setEmail("");
@@ -58,7 +58,7 @@ const EmailForm = () => {
     } catch (error) {
       toast.error("Failed to send your message. Please try again.");
     } finally {
-      setIsSubmitting(false); // Hide loader
+      setIsSubmitting(false);
     }
   };
 
@@ -276,7 +276,7 @@ const EmailForm = () => {
                           color: "white",
                           py: 1.5,
                         }}
-                        disabled={isSubmitting} // Disable button when submitting
+                        disabled={isSubmitting}
                       >
                         {isSubmitting ? (
                           <CircularProgress size={24} sx={{ color: "white" }} />
@@ -301,29 +301,24 @@ const EmailForm = () => {
               }}
             >
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29338.87625192641!2d72.59424776526618!3d23.193564556958155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c2a2042292cf9%3A0x3d2432affb1a8e98!2sSargasan%2C%20Gandhinagar%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1717157897636!5m2!1sen!2sin"
-                width="100%"
-                height="100%"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3668.947168837281!2d72.54353011614684!3d23.13560627557775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1719565863586!5m2!1sen!2sin"
+                width="900"
+                height="600"
                 style={{ border: 0 }}
-                allowFullScreen=""
+                allowfullscreen=""
                 loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
+                referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
             </Box>
           </Grid>
         </Grid>
-
-        {/* <Grid item sx={{ paddingTop: "25px", width: "100%" }}> */}
-
-        {/* </Grid> */}
         <ToastContainer />
       </Box>
       <Box sx={{ paddingTop: "75px", backgroundColor: "black" }}>
-        <Footer/>
+        <Footer />
       </Box>
     </>
   );
 };
 
 export default EmailForm;
-

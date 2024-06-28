@@ -27,7 +27,6 @@ const Projects = () => {
         justifyContent: "center",
         position: "relative",
         zIndex: 1,
-        // padding: "0 16px",
         alignItems: "center",
         backgroundColor: "black",
       }}

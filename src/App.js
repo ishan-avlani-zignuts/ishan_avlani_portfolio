@@ -3,16 +3,24 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import RestrictedPage from "./components/RestrictedPage";
 import Home from "./views/Home";
 import Loader from "./components/Loader";
-
+import Login from "./components/Login";
+import { auth } from "./firebase/Firebase";
+import { Analytics } from "@vercel/analytics/react";
 function App() {
+  const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
+    const unsubscribe = auth.onAuthStateChanged((user) => {
+      if (user) {
+        setUser(user);
+      } else {
+        setUser(null);
+      }
       setLoading(false);
-    }, 2000);
+    });
 
-    return () => clearTimeout(timer);
+    return unsubscribe;
   }, []);
 
   if (loading) {
@@ -23,10 +31,10 @@ function App() {
           justifyContent: "center",
           alignItems: "center",
           height: "100vh",
-          backgroundColor : "black"
+          backgroundColor: "black",
         }}
       >
-        <Loader/>
+        <Loader />
       </div>
     );
   }
@@ -36,9 +44,10 @@ function App() {
       <Router>
         <Routes>
           <Route path="*" element={<RestrictedPage />} />
-          <Route path="/" element={<Home/>} />
+          <Route path="/" element={user ? <Home /> : <Login />} />
         </Routes>
       </Router>
+      <Analytics />
     </>
   );
 }
