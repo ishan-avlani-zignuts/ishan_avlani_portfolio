@@ -44,7 +44,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="*" element={<RestrictedPage />} />
-          <Route path="/" element={user ? <Home /> : <Login />} />
+          <Route path="/" element={user ? <Login /> : <Home />} />
         </Routes>
       </Router>
       <Analytics />
