@@ -75,6 +75,7 @@ const Navbar = () => {
             textFillColor: "transparent",
             "&:hover": {
               background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)",
+              color: "white",
             },
           }}
         >
@@ -210,8 +211,10 @@ const NavigationLinks = () => (
         }}
       >
         <Box display="flex" alignItems="center">
-            {item.icon}
-          <Typography sx={{ marginLeft: 1 , color:"wheat"}}>{item.text}</Typography>
+          {item.icon}
+          <Typography sx={{ marginLeft: 1, color: "wheat" }}>
+            {item.text}
+          </Typography>
         </Box>
       </Link>
     ))}

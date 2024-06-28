@@ -15,28 +15,29 @@ const Login = () => {
       toast.error("Error signing in with Google");
     }
   };
-
   return (
-    <LoginContainer style={{paddingLeft:"20px", paddingRight:"20px"}}>
+    <LoginContainer style={{ paddingLeft: "20px", paddingRight: "20px" }}>
       <Box
         sx={{
           display: "flex",
           border: "1px solid wheat",
-          backgroundColor: "#232f3a",
-          flexDirection: {xs:"column",sm:"column",md:"row", lg:"row"},
+          backgroundColor: "#232F3A",
+          flexDirection: { xs: "column", sm: "column", md: "row", lg: "row" },
         }}
       >
-        <Box sx={{textAlign:"center", alignItems:"center", display:"flex"}}>
+        <Box
+          sx={{ textAlign: "center", alignItems: "center", display: "flex" }}
+        >
           <img
             src="https://ncetir.com/Images/login@4x.png"
-            style={{maxWidth:"300px", width:"100%", height:"auto"}}
+            style={{ maxWidth: "300px", width: "100%", height: "auto" }}
             alt="img"
           />
         </Box>
         <LoginBox>
-          <Title>Hello 👋</Title>
+          <Title>Hello :wave:</Title>
           <Title>Welcome to My Portfolio</Title>
-          <Subtitle>Let's Connect and Collaborate 🤝</Subtitle>
+          <Subtitle>Let's Connect and Collaborate :handshake:</Subtitle>
           <Box sx={{ display: "flex", justifyContent: "center" }}>
             <GoogleButton onClick={signInWithGoogle}>
               <GoogleIcon
@@ -51,9 +52,7 @@ const Login = () => {
     </LoginContainer>
   );
 };
-
 export default Login;
-
 // Styled Components
 const LoginContainer = styled.div`
   display: flex;
@@ -62,24 +61,20 @@ const LoginContainer = styled.div`
   height: 100vh;
   background: black;
 `;
-
 const LoginBox = styled.div`
   padding: 40px 40px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
 `;
-
 const Title = styled.h2`
   margin-bottom: 20px;
   color: wheat;
 `;
-
 const Subtitle = styled.p`
   margin-bottom: 30px;
   color: white;
 `;
-
 const GoogleButton = styled.button`
   display: flex;
   align-items: center;
@@ -92,7 +87,6 @@ const GoogleButton = styled.button`
   cursor: pointer;
   transition: background-color 0.3s;
 `;
-
 const GoogleIcon = styled.img`
   margin-right: 10px;
   width: 24px;
