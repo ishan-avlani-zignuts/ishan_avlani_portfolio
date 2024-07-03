@@ -98,7 +98,7 @@ const Education = ({ education }) => {
           marginBottom: "10px",
         }}
       >
-        <Box component="span">{education.desc}</Box>
+        <Box component="span" textAlign={"justify"}>{education.desc}</Box>
       </Typography>
     </VerticalTimelineElement>
   );

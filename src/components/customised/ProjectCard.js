@@ -52,6 +52,7 @@ const ProjectCard = ({ project }) => {
             marginTop: "15px",
             maxWidth: "100%",
             height: "55px",
+            textAlign:"justify",
           }}
         >
           {project.desc}

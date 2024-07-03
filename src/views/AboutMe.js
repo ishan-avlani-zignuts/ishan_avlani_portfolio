@@ -60,7 +60,7 @@ const AboutMe = () => {
                 />
               </Box>
             </Box>
-            <Typography variant="body1" sx={{ fontSize: 20 }}>
+            <Typography variant="body1" sx={{ fontSize: 20 }} textAlign={"justify"}>
               {Bio.description}
             </Typography>
             <Box marginTop={"20px"}>

@@ -72,8 +72,9 @@ const ExperienceCard = ({ experience }) => {
       <Box mt={2}>
         {experience?.desc && (
           <Typography
-            variant="body2"
+            variant="body2" 
             component="div"
+            textAlign={"justify"}
             sx={{ color: "white", marginBottom: 1 }}
           >
             {experience.desc}
