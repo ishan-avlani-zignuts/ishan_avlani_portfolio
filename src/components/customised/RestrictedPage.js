@@ -1,5 +1,5 @@
 import React from "react";
-import restricted from "../assets/images/restricted_page.png";
+import restricted from "../../assets/images/restricted_page.png";
 
 const RestrictedPage = () => {
   return (

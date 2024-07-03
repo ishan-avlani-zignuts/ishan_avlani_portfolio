@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Grid, Typography, Button } from "@mui/material";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/common/Navbar";
 import { Bio } from "../assets/data/constants";
 import Typewriter from "typewriter-effect";
 import HeroImg from "../assets/images/hero.jpeg";

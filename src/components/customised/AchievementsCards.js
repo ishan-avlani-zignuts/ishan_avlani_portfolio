@@ -19,14 +19,13 @@ const AchievementCard = ({ img, desc, reverse }) => {
         overflow: "hidden",
       }}
     >
-      <Box sx={{ width: { xs: "350px", sm: "350px" } }}>
+      <Box sx={{ width: { xs: "100%", sm: "350px" } }}>
         <img
           src={img}
           alt="achievement"
+          width={ { xs: "100%", sm: "350px"} }
           style={{
-            width: "350px",
             height: "350px",
-            objectFit: "cover",
             borderRadius: {
               xs: "20px 20px 0 0",
               sm: reverse ? "0 20px 20px 0" : "20px 0 0 20px",
@@ -41,12 +40,12 @@ const AchievementCard = ({ img, desc, reverse }) => {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          flex:"1"
+          flex: "1",
         }}
       >
         <Typography
           sx={{
-            color: "white",
+            color: "wheat",
             fontSize: { xs: "18px", sm: "24px" },
             textAlign: "center",
           }}

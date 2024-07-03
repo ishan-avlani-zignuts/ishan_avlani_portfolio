@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Typography from "@mui/material/Typography";
 import { Box, Button } from "@mui/material";
-import ProjectCard from "../components/ProjectCard";
+import ProjectCard from "../components/customised/ProjectCard";
 import { projects } from "../assets/data/constants";
 import { MdExpandMore } from "react-icons/md";
 import { MdExpandLess } from "react-icons/md";

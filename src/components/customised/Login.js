@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { auth } from "../firebase/Firebase";
+import { auth } from "../../firebase/Firebase";
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { Box } from "@mui/material";
 import { toast } from "react-toastify";

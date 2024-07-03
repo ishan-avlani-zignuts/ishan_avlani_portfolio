@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import RestrictedPage from "./components/RestrictedPage";
+import RestrictedPage from "./components/customised/RestrictedPage";
 import Home from "./views/Home";
-import Loader from "./components/Loader";
-import Login from "./components/Login";
+import Loader from "./components/customised/Loader";
+// import Login from "./components/Login";
 import { auth } from "./firebase/Firebase";
 import { Analytics } from "@vercel/analytics/react";
 function App() {
@@ -44,7 +44,8 @@ function App() {
       <Router>
         <Routes>
           <Route path="*" element={<RestrictedPage />} />
-          <Route path="/" element={user ? <Home /> : <Login />} />
+          {/* <Route path="/" element={user ? <Home /> : <Login />} /> */}
+          <Route path="/" element={<Home />} />
         </Routes>
       </Router>
       <Analytics />
@@ -53,3 +54,4 @@ function App() {
 }
 
 export default App;
+

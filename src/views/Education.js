@@ -2,7 +2,7 @@ import React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { education } from "../assets/data/constants";
-import EducationCard from "../components/EducationCard";
+import EducationCard from "../components/customised/EducationCard";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 

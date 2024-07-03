@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import { achievements } from "../assets/data/constants";
-import AchievementCard from "../components/AchievementsCards";
+import AchievementCard from "../components/customised/AchievementsCards";
 
 const Achievements = () => {
   return (

@@ -2,7 +2,7 @@ import React from "react";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { experiences } from "../assets/data/constants";
-import ExperienceCard from "../components/ExperienceCard";
+import ExperienceCard from "../components/customised/ExperienceCard";
 import { Box, Typography} from "@mui/material";
 
 const Experience = () => {

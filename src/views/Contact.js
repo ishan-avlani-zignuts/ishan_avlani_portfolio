@@ -15,7 +15,7 @@ import axios from "axios";
 import { BiMessageAltDetail } from "react-icons/bi";
 import { IoMdMail } from "react-icons/io";
 import { FaPhoneAlt, FaUserAlt } from "react-icons/fa";
-import Footer from "../components/Footer";
+import Footer from "../components/common/Footer";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -246,7 +246,7 @@ const EmailForm = () => {
                             sx={{ backgroundColor: "white", color: "black" }}
                             minRows={3}
                             variant="filled"
-                            label="Your Message to me"
+                            label="Your message to me"
                             value={message}
                             onChange={(e) => {
                               setMessage(e.target.value);
@@ -293,7 +293,7 @@ const EmailForm = () => {
           <Grid item xs={12} md={6}>
             <Box
               sx={{
-                height: { xs: "300px", md: "530px" },
+                height: { xs: "400px", md: "530px" },
                 backgroundColor: "white",
                 borderRadius: 2,
                 overflow: "hidden",
@@ -301,6 +301,7 @@ const EmailForm = () => {
               }}
             >
               <iframe
+                title="map"
                 src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3668.947168837281!2d72.54353011614684!3d23.13560627557775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1719565863586!5m2!1sen!2sin"
                 width="900"
                 height="600"

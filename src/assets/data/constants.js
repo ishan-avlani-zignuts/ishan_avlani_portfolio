@@ -32,7 +32,7 @@ import hotels from "../images/sentiment_analysis.png";
 import ishan from "../images/achievement.jpeg";
 import ambassador from "../images/ambassador.jpg";
 import first from "../images/first.webp";
-
+import satellite from "../images/satellite.png"
 // About me Data
 export const Bio = {
   name: "Ishan Sandip Avlani",
@@ -85,7 +85,7 @@ export const experiences = [
     role: "Software Developer",
     company: "Zignuts Technolab Pvt. Ltd.",
     date: "January 2024 - Present",
-    desc: "I work at Zignuts Technolab Pvt. Ltd. as a Software Developer, where I create and manage innovative software solutions for clients around the world. Using modern technologies, I design, develop, and test software applications. I work collaboratively with cross-functional teams to provide dependable, scalable solutions that meet client requirements and exceed expectations. I work in a variety of industries, such as banking, e-commerce, and healthcare, so I'm able to get a broad range of knowledge in solving challenging business problems with cutting-edge technologies.",
+    desc: "I work at Zignuts Technolab Pvt. Ltd. as a Software Developer, where I create and manage innovative software solutions for clients around the world. Using modern technologies, I design, develop, and test software applications. I work collaboratively with cross-functional teams to provide dependable, scalable solutions that meet client requirements and exceed expectations. Here at Zignuts Technolab there are many projects from variety of industries, so I'm able to get a broad range of knowledge in solving challenging business problems with cutting-edge technologies and smart solutions.",
     skills: [
       "React.js",
       "Redux",
@@ -266,5 +266,11 @@ export const achievements = [
     id: 2,
     img: first,
     desc: "Completed Computer Engineering with First Rank by securing 10 / 10 SGPA throughout the last year.",
+  },
+
+  {
+    id: 3,
+    img: satellite,
+    desc: "Got the chance to work as Software Developer in Gujarat`s First Student Satellite Team of Marwadi University.",
   },
 ];

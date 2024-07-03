@@ -20,7 +20,7 @@ import BuildIcon from "@mui/icons-material/Build";
 import StarsIcon from "@mui/icons-material/Stars";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
 import { FaFileDownload } from "react-icons/fa";
-import resume from "../assets/Ishan Sandip Avlani Resume.pdf";
+import resume from "../../assets/Ishan Sandip Avlani Resume.pdf";
 const Navbar = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
 
@@ -200,7 +200,7 @@ const NavigationLinks = () => (
         sx={{
           textDecoration: "none",
           color: "wheat",
-          marginRight: 2,
+          marginRight: {xs:1 , sm:1,md:1, lg:1,xl:2},
           "&:hover": {
             textDecoration: "underline",
           },
